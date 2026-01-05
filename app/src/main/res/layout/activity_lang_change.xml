@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/CadburyPurple"
+    android:padding="20dp"
+    tools:context=".LangChangeActivity">
+
+    <RelativeLayout
+        android:id="@+id/titleCardNanny"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/titleLang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/srtvalLangTitle"
+            android:textColor="@color/Lilac"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/introLang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleLang"
+            android:paddingBottom="20dp"
+            android:text="@string/strvalLangIntro"
+            android:textColor="@color/Lavendar"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnSetLangEN"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/introLang"
+            android:text="English" />
+
+        <Button
+            android:id="@+id/btnSetLangFR"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnSetLangEN"
+            android:layout_marginTop="10dp"
+            android:text="Français" />
+
+        <Button
+            android:id="@+id/btnSetLangAR"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnSetLangFR"
+            android:layout_marginTop="10dp"
+            android:text="العربية" />
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

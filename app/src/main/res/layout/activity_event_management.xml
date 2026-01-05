@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/CadburyPurple">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gestion des Événements"
+        android:textColor="@color/Lilac"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="20dp" />
+
+    <EditText
+        android:id="@+id/edtEventName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nom de l'événement"
+        android:textColorHint="@color/Amethyst"
+        android:textColor="@color/Lavendar"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:id="@+id/edtEventDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date (dd/MM/yyyy)"
+        android:textColorHint="@color/Amethyst"
+        android:textColor="@color/Lavendar"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:id="@+id/edtEventDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description (optionnel)"
+        android:textColorHint="@color/Amethyst"
+        android:textColor="@color/Lavendar"
+        android:minLines="2"
+        android:layout_marginBottom="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/btnAddEvent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ajouter"
+            android:layout_marginEnd="5dp" />
+
+        <Button
+            android:id="@+id/btnUpdateEvent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Modifier"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp" />
+
+        <Button
+            android:id="@+id/btnDeleteEvent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Supprimer"
+            android:layout_marginStart="5dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Liste des événements"
+        android:textColor="@color/Lilac"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp" />
+
+    <ListView
+        android:id="@+id/listViewEvents"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:choiceMode="singleChoice" />
+
+</LinearLayout>
+
+
+

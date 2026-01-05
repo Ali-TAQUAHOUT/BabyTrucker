@@ -1,0 +1,22 @@
+{
+  "rules": {
+    "chats": {
+      "$chatRoomId": {
+        ".read": "auth != null",
+        ".write": "auth != null",
+        "messages": {
+          "$messageId": {
+            ".read": "auth != null",
+            ".write": "auth != null",
+            ".validate": "newData.hasChildren(['text', 'senderId', 'senderRole', 'timestamp'])"
+          }
+        }
+      }
+    },
+    "events": {
+      ".read": "auth != null",
+      ".write": "auth != null"
+    }
+  }
+}
+
